@@ -1,0 +1,77 @@
+.groupManage{
+    ::v-deep .el-select{
+        width: 100%;
+    }
+    
+
+    .leftBar{
+        width: 25vw;
+    }
+
+    .el-aside{
+        padding: 0 20px 10px;
+    }
+
+    aside{
+        color: #000;
+    }
+
+
+    .addGroup{
+        border-bottom: 1px solid #DCDFE6;
+        margin-bottom: 5px;
+    }
+
+    .groupList{
+        padding:0 10px;
+        margin-bottom: 5px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .editDialog{
+        position: absolute;
+        right: 0;
+        top:25px;
+        width: 100px;
+        z-index: 100;
+        background-color: #fff;
+        color: #555;
+        box-shadow: 1px 1px 5px 0 #ccc;
+        span{
+            height: 30px;
+            width: 100%;
+            text-align: center;
+            line-height: 30px;
+            font-size: 13px;
+        }
+        span:hover{
+            background-color: #eee;
+            color: #1D73B1;
+        }
+        .e_active{
+            background-color: #eee;
+            color: #1D73B1;
+        }
+    }
+
+    .asideWapper{
+        background-color: #fff;
+        border-right: 2px solid #eee;
+        
+        .active{
+            background-color:rgba(29,115,177);
+            color: #fff;
+        }
+
+        .el-pagination__jump{
+            display: block;
+            margin-left: 0;
+        }
+
+        .pageLine{
+            margin-bottom: 0;
+            // padding: 12px 5px 0;
+        }
+    }
+}

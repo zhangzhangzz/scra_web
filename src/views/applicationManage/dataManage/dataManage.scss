@@ -1,0 +1,37 @@
+.ProAdd,.ProAdd1{
+    position: relative;
+    width: 100%;
+    padding:20px 0 10px 0;
+    margin-bottom:20px;
+    border:1px solid #1ca095;
+    .ProAdd_1{
+      width: 80px;
+      line-height: 30px;
+      background-color: #fff;
+      position: absolute;
+      top:-15px;
+      left: 20px;
+      text-align: center;
+      color:#1ca095;
+    }
+    .ProAdd_2{
+      display: flex;
+      flex-wrap: wrap;
+      padding-right: 20px;
+      .el-form-item{
+        margin-right: 25px;
+      }
+    }
+  }
+  .ProAdd1{
+    margin-bottom:0;
+  }
+  
+  .inputWapper{
+    span{
+      height: 36px;
+      line-height: 36px;
+      color: #050F1A;
+      margin-right: 10px;
+    }
+  }

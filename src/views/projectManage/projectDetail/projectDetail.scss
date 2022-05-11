@@ -1,0 +1,262 @@
+.projectDetail{
+    height: 100%;
+
+    .title1{
+        height: 40px;
+        line-height: 40px;
+        padding: 0 5px;
+        border-bottom: 1px solid #ddd;
+        span{
+            flex: 1;
+            text-align: center;
+        }
+        .row{
+            flex: 1;
+        }
+        i{
+            margin: auto;
+            cursor: pointer;
+        }
+
+        .dbtn{
+            cursor: pointer;
+            width:75px;
+            height:28px;
+            background:#59CAA0;
+            color:#fff;
+            line-height:28px;
+            text-align:center;
+            border-radius:3px;
+            font-size:14px;
+            margin:auto 0 auto auto;
+        }
+    }
+
+    .main{
+        padding: 10px 30px;
+        overflow: hidden;
+        .row{
+            width: 100%;
+            span{
+                line-height: 36px;
+                margin: auto auto auto 0;
+            }
+        }
+        .video{
+            margin-top: 10px;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            height: calc(100% - 46px);
+        }
+
+        .video2{
+            width: 100%;
+            margin-top: 20px;
+            div{
+                border: 1px solid #ccc;
+                background-color: #eee;
+                width: 240px;
+                height: 240px;
+                margin-right: 20px;
+                border-radius: 10px;
+                position: relative;
+                i{
+                    cursor: pointer;
+                    position: absolute;
+                    font-size: 25px;
+                    right: -10px;
+                    top: -10px;
+                    color: #ccc;
+
+                }
+            }
+        }
+    }
+
+    .groupEdit{
+        .el-dialog__header{
+        }
+
+        .el-dialog__body{
+            padding:10px 20px 0;
+        }
+
+        .el-dialog__footer{
+            text-align: center;
+        }
+
+        .el-select{
+            width: 100%;
+        }
+
+
+        .inputWapper{
+            border-top:1px solid #DCDFE6;
+            border-bottom:1px solid #DCDFE6;
+            color: #333;
+            padding: 20px 0 0;
+
+            
+            .el-input__suffix,.el-input__suffix-inner{
+                height: 36px!important;
+                line-height: 36px!important;
+            }
+
+            .warn{
+                color: #ff3915;
+                font-size: 28px;
+                margin: auto 2px auto 0;
+                line-height: 65px;
+            }
+
+            .el-select{
+                margin: auto;
+            }
+
+            .el-form-item--medium .el-form-item__label{
+                width: auto!important;
+            }
+
+            .el-form-item--medium .el-form-item__content{
+                margin-left: 110px!important;
+            }
+
+            
+            .el-input__inner{
+                color: #333;
+            }
+        }
+        
+    }
+}
+
+.upload-demo{
+    align-items: flex-start;
+}
+
+.tree{
+    overflow: hidden;
+    .minus{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .imgWapper{
+        background-color: #fff;
+        margin-right: 5px;
+        z-index: 9;
+        width: 15px;
+        // height: 15px;
+    }
+    
+    .row{
+        margin:0 auto 0 0;
+        height: 24px;
+        font-size: 10px;
+        position: relative;
+    }
+
+    .columns{
+        margin:0 auto 0 0;
+        overflow: hidden;
+    }
+
+    .second{
+        position: relative;
+        width: calc(100% - 15px);
+        margin-left: 15px;
+    }
+
+    .file_icon{
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    .file1_icon{
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .first{
+        position: relative;
+        width: 100%;
+        span{
+            line-height: 24px;
+            cursor: pointer;
+        }
+    }
+
+    .second{
+        margin-bottom: 0;
+        span{
+            line-height: 20px;
+            cursor: pointer;
+        }
+        .xx{
+            position: absolute;
+            height: 15px;
+            width: 12px;
+            border-left: 1px dotted #000;
+            border-bottom: 1px dotted #000;
+            left: 7px;
+            top: -3px;
+        }
+    }
+
+    .secondWapper{
+        width: calc(100% - 23px);
+        position: relative;
+        border-left: 1px dotted #000;
+        margin-left: 22px;
+        overflow: hidden;
+        .second_child{
+            cursor: pointer;
+            position: relative;
+            margin-left: 20px;
+            margin-bottom: 1px;
+            border-left: 1px dotted #000;
+            .xx{
+                position: absolute;
+                height: 1px;
+                width: 10px;
+                border-bottom: 1px dotted #000;
+                left: 1px;
+                top: 11px;
+            }
+            .white_xx{
+                position: absolute;
+                height: 12px;
+                width: 10px;
+                background-color: #fff;
+                left: -1px;
+                top: 12px;
+                z-index: 99;
+            }
+            .file1_icon{
+                padding-left: 8px;
+                margin-left: 5px;
+            }
+            span{
+                line-height: 20px;
+            }
+        }
+    } 
+}
+
+.treeOpen{
+    width: 100%;
+    transition: 0.5s all;
+    transform: translateY(0%);
+}
+
+.treeClose{
+    width: 100%;
+    transition: 0.5s all;
+    transform: translateY(0%);
+}

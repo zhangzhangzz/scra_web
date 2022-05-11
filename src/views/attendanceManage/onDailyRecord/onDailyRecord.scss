@@ -1,0 +1,26 @@
+.onDailyRecord{
+  ::v-deep .el-select{
+    width: 100%;
+  }
+
+  .sl_Wapper{
+    width:100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;    
+  }
+
+  .xsBox{
+    position: absolute;
+    background: rgb(126,126,124);
+    color:#fff;
+    font-weight:600;
+    left: 0;
+    right: 0;
+    bottom: 10;
+    display: none;
+    z-index: 999;
+    text-align: left;
+    padding: 5px;
+  }
+}

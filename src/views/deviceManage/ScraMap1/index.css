@@ -1,0 +1,803 @@
+.allScra{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.allScra >>> .infobox_content {
+    /* padding:10px; */
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    height: 100px;
+}
+
+.allScra >>> .con_name{
+    width: 100%;
+    margin-top: 15px;
+    background: white;
+    border-radius: 4px 4px 0 0;
+    color: #333333;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    line-height: 18px;
+}
+
+.allScra >>> .el-checkbox-group{
+    text-align: left;
+}
+
+.allScra >>> .flag {
+    font-size: 14px;
+    font-weight: 500;
+    /* color: #045B9C; */
+}
+
+.allScra >>> .el-icon-arrow-up{
+    line-height: 32px;
+}
+
+.allScra >>> .infobox_value {
+    font-size: 25px;
+    color: #16B16A;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.allScra >>> .nextWapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.allScra >>> .unit {
+    font-size: 12px;
+    line-height: 34px;
+    color: #999999;
+}
+
+.allScra >>> .gk_val{
+    margin-left: auto;
+}
+
+.allScra >>> .el-switch.is-checked .el-switch__core::after{
+    margin-right: -14px;
+}
+
+.searchWapper{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 9;
+}
+
+.searchWapper >>> .el-input__inner{
+    height: 32px;
+    line-height: 32px;
+    border-radius:4px 0 0 4px;
+}
+
+.inline-input{
+    width: 213px;
+}
+
+.el-select{
+    width: 70px;
+}
+
+.selectWapper >>> .el-input__inner{
+    border-right: none;
+    border-radius:4px 0 0 4px;
+    height: 32px;
+    padding-right: 15px;
+}
+
+.selectWapper >>> .el-input__icon{
+    width: 15px;
+    line-height: 32px;
+    color: #555;
+}
+
+.inline-input >>> .el-input__inner{
+    border-radius:0 4px 4px 0;
+    height: 32px;
+}
+
+.inline-input >>> .el-input__suffix{
+    border-left: 1px solid #DCDFE6;
+}
+
+.inline-input >>> .el-input__icon{
+    line-height: 32px;
+    color: #555;
+}
+
+.onLineWapper{
+    position: absolute;
+    height: 32px;
+    background: white;
+    z-index: 1;
+    right: calc(50% - 220px);
+    top: 50px;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 0 40px;
+    line-height: 32px;
+    color: #666666;
+    display: flex;
+    flex-direction: row;
+}
+
+.onLineWapper span{
+    flex: 1;
+    padding: 0 5px;
+    width: 100px;
+}
+
+.leftBar{
+    width: 160px;
+    display: flex;
+    flex-flow: column;
+    background: #3A3D49;
+    position: absolute;
+    left: 50px;
+    top: 150px;
+    opacity: 0.9;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    user-select: none;
+    z-index: 1;
+}
+
+.f_title {
+    color: #00A2FF;
+    font-size: 12px;
+    text-align: left;
+    flex: 0 0 35px;
+    border-bottom: 1px solid #565963;
+    line-height: 35px;
+    padding: 0 12px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.columns{
+    display: flex;
+    flex-direction: column;
+}
+
+.f_con_type {
+    position: relative;
+    border-bottom: 1px solid #565963;
+}
+
+.f_con_type:hover .rightBar{
+    display: flex;
+}
+
+.kb{
+    width: 6px;
+    height: 109.88px;
+}
+
+.r_b{
+    background: #3A3D49;
+    padding: 8px;
+    width: 86px;
+    border-radius: 4px;
+}
+
+.rightBar{
+    display: none;
+    position: absolute;
+    right: -92px;
+    top: 0;
+}
+
+.second{
+    width: 100%;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 0 12px;
+}
+
+.el-icon-arrow-right{
+    color: #028aea;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: auto;
+}
+
+.choose{
+    width: 100%;
+    color: white;
+    font-size: 12px;
+    margin: 10px 0;
+    text-align: left;
+    padding: 0 12px;
+}
+
+.map_show_option {
+    padding: 0 12px 5px;
+    font-size: 12px;
+    color: white;
+    display: flex;
+    flex-flow: column;
+}
+
+.map_show_option > div {
+    margin-top: 10px;
+    display: flex;
+}
+
+.map_show_option > div > span{
+    margin-right: 15px;
+}
+
+.map_show_option >>> .el-switch__core {
+    height: 16px;
+    width: 32px!important;
+}
+
+.map_show_option >>> .el-switch__core:after{
+    height: 12px;
+    width: 12px;
+}
+
+
+/* 隐藏边角 */
+.allScra >>> .BMap_pop > div:nth-of-type(1){
+    display:none!important;
+}
+
+.allScra >>> .BMap_pop > div:nth-of-type(2){
+    display:none!important;
+}
+
+.allScra >>> .BMap_pop > img{
+    display:none!important;
+}
+
+.allScra >>> .BMap_pop > div:nth-of-type(3){
+    display:none!important;
+} 
+
+.allScra >>> .BMap_pop > div:nth-of-type(8){
+    display:none!important;
+} 
+
+.allScra >>> .BMap_pop > div:nth-of-type(9){
+    overflow: visible!important;
+    left: 0px!important;
+    top: 50px!important;
+} 
+
+.allScra >>> .BMap_bubble_content{
+    margin-top: 5px;
+}
+
+.allScra >>> .BMap_pop > div:nth-of-type(5){
+    /* border-bottom-left-radius: 10px; */
+    display:none!important;
+} 
+
+.allScra >>> .BMap_pop > div:nth-of-type(6){
+    /* border-bottom-right-radius: 10px; */
+    display:none!important;
+} 
+
+.allScra >>> .BMap_pop > div:nth-of-type(7){
+    /* border-bottom-right-radius: 10px; */
+    display:none!important;
+} 
+
+.allScra >>> .BMap_center{
+    border-radius: 6px;
+    width: 225px;
+    left: -13px!important;
+    top: 60px!important;
+    height: 100px!important;
+}
+
+.allScra >>> .infobox_content{
+    width: 225px;
+}
+
+
+.allScra >>> .tag_container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 1px;
+    width: 100%;
+    top: 110px;
+    left: -1px;
+}
+
+.allScra >>> .tag{
+    height: 0px;
+    width: 0px;
+    border: 5px solid transparent;
+    border-top: 5px solid white;
+}
+
+.allScra >>> .el-checkbox__input.is-checked+.el-checkbox__label{
+    color: #fff;
+}
+
+.allScra >>> .el-checkbox__label{
+    font-size: 12px;
+}
+
+.allScra >>> .el-checkbox{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 0;
+    margin-bottom: 3px;
+}
+
+
+.allScra >>> .el-checkbox:last-of-type{
+    margin-bottom: 0;
+}
+
+.allScra >>> .el-checkbox__label{
+    padding-left: 6px;
+}
+
+.allScra >>> .el-checkbox__input.is-disabled+span.el-checkbox__label{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.select1{
+    width: 0.9rem;
+}
+
+.select1 >>> .el-input__inner{
+    text-align: center;
+}
+
+
+/*  */
+.picBack_show{
+    transition: 0.5s all;
+    transform: translateY(0%);
+    bottom: 0;
+    padding: 0.1rem;
+}
+
+.picBack_hide{
+    transition: 0.5s all;
+    transform: translateY(0%);
+    bottom: -350px;
+}
+
+.picBack{
+	/* height: 450px; */
+	background-color:rgba(18, 19, 21, 0.9);
+	position: absolute;
+    z-index:10;
+    left: 0;
+    right: 0;
+}
+/* 头部div */
+.tops{
+	position: relative;
+	width: 100%;
+	/* background-color: #20FFB4; */
+	display: flex;
+    flex-direction: column;
+    /* border-bottom-color: rgba(255, 255, 255, 0.2); */
+}
+
+.topWapper1 {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 0.18rem;
+}
+
+.topWapper1 span{
+    margin: auto 0 auto 0.1rem;
+}
+
+.topWapper1 img{
+    width: 0.26rem;
+    height: 0.26rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.moreData{
+    margin:0.2rem 0;
+    height: 6vh;
+}
+
+.moreData > .columns{
+    height: 80%;
+    margin: auto 0 auto 0.4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.moreData > .columns:last-of-type{
+    border-right:none;
+}
+
+.moreData  .num{
+    color:#fff;
+    font-size:0.45rem;
+    font-weight:700;
+    margin-right: 3px;
+}
+
+.bottom_text{
+    font-size: 0.1rem;
+    font-weight: 400;
+    color: #fff;
+    width: 100%;
+    text-align: left;
+}
+
+
+/* 底部echarts */
+.bottoms{
+	height: 22vh;
+	position: relative;
+}
+/* 实时同态 对比国控 */
+
+
+.tabWapper1{
+    position: absolute;
+    color: #fff;
+    margin-left: 0.3rem;
+    z-index: 999;
+}
+
+.tabWapper1 div{
+    width: 0.7rem;
+    padding-top: 0.15rem;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.lineScra{
+    position: absolute;
+    width: 0.24rem;
+    left: 0.23rem;
+    height: 3px;
+    top: 0;
+    background-color: #0095ED;
+}
+
+.borderColor1{
+	border-bottom:5px solid #0095ED;
+}
+.borderColor2{
+	border-bottom:5px solid #0095ED;
+}
+
+.bottoms_B{
+	height: 100%;
+	/* background-color: #4A4D5D; */
+}
+.bottoms_B>div{
+	height: 100%;
+	width: 100%;
+    display: flex;
+	/* background-color: red; */
+}
+
+.posirig_show{
+    transition: 0.5s all;
+    transform: translateY(0%);
+	right: 0rem;
+}
+
+.posirig_hide{
+    transition: 0.5s all;
+    transform: translateY(0%);
+	right: -365px;
+}
+
+.posirig{
+	width:400px;
+    height: calc(100vh - 155px);
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+    top: 0;
+    z-index: 99;
+}
+/* 右边详情 left */
+.posirig>div:nth-child(1){
+	padding-top:2.5rem;
+	width: 0.5rem;
+	height: 3rem;
+}
+/* 排行 */
+.posirig>div:nth-child(1)>div:nth-child(1){
+	background-color: #f5f5f5;
+	margin-bottom: 0.2rem;
+	border-top-left-radius:12px;
+	border-bottom-left-radius:12px;
+}
+.posirig>div:nth-child(1)>div:nth-child(2){
+	background-color: #F5F5F5;
+	margin-bottom: 20px;
+	border-top-left-radius:12px;
+	border-bottom-left-radius:12px;
+}
+/* 排行 //统计*/
+.posirig>div:nth-child(1)>div:nth-child(1)>div,
+.posirig>div:nth-child(1)>div:nth-child(2)>div{
+	font-size: 16px;
+    height: 80px;
+    font-weight: bold;
+	text-align: center;
+    width: 10px;
+    margin: auto;
+    justify-content: center;
+    cursor: pointer;
+    color: #045B9C;
+}
+/* 统计 */
+.posirig>div:nth-child(1)>div:nth-child(2){
+	background-color: #F5F5F5;
+}
+/* 右侧详情 */
+.posirig_right{
+	position: relative;
+	overflow: hidden;
+	width:400px;
+	background-color: rgba(243,245,244);
+	z-index:100;
+	padding: 10px;
+}
+/* 详情div */
+.posirig_right>div:nth-child(1)>div{
+	display: flex;
+	justify-content: space-between;
+	width:100%;
+	/* height: 1rem; */
+	/* padding: 10px 0.1rem; */
+}
+/* ul */
+.posirig_right>div:nth-child(1)>div>ul{
+	border:1px solid rgba(0,0,0,0.2);
+	border-top-left-radius:12px;
+	border-bottom-left-radius:12px;
+	padding: 10px;
+	/* height: 0.9rem; */
+    width: 80%;
+    /* margin-left: 10%; */
+	background-color: #fff;
+	border-right: 0;
+}
+
+.l0{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    line-height: 22px;
+}
+
+/* 排行1 */
+.l1{
+	text-align: center;
+	padding-bottom:0.03rem;
+	display: inline-block;
+	width: 18px;
+    height: 18px;
+    line-height: 18px;
+	background-color: #04549C;
+    vertical-align: middle;
+    color: #fff;
+    margin-right: 3px;
+    margin-top: -4px;
+}
+.posirig_right>div:nth-child(1)>div:nth-child(2)>ul>li:nth-child(1)>span:nth-child(1){
+	background-color: #0ACE62;
+}
+/* 排行1 后span */
+.l2{
+    font-size: 16px;
+    line-height: 2px;
+    color: #333;
+    
+}
+.posirig_right>div:nth-child(1)>div>ul>li:nth-child(2){
+	margin-top:0.25rem
+}
+/* 在线率span */
+.posirig_right>div:nth-child(1)>div>ul>li:nth-child(2)>span{
+	font-size:12px;
+	color:rgb(154, 154, 154);
+}
+
+.posirig_right>div:nth-child(1)>div>ul>li:nth-child(2)>span:nth-child(1),
+.posirig_right>div:nth-child(1)>div>ul>li:nth-child(2)>span:nth-child(3){
+	display: inline-block;
+	margin-left: 0.1rem;
+}
+/* pm10 */
+.posirig_right>div:nth-child(1)>div>div:nth-child(2){
+	border:1px solid rgba(0,0,0,0.2);
+	border-top-right-radius:12px;
+	border-bottom-right-radius:12px;
+	border-left: 0;
+	/* border-left: 1px solid #e8e8e8; */
+	background-color: #fff;
+	padding:0.07rem 0.05rem; 
+    text-align: center;
+	width:30%;
+}
+/* pm10 */
+.posirig_right>div:nth-child(1)>div>div:nth-child(2)>p{
+	 color:#333;
+     font-size: 12px;
+     margin-top: auto;
+}
+/* 国控span */
+.posirig_right>div:nth-child(1)>div>div:nth-child(2)>p:nth-child(3)>span{
+	font-size: 0.145rem;
+}
+/* 32.4 */
+.posirig_right>div:nth-child(1)>div>div:nth-child(2)>p:nth-child(2){
+	color:#2BA85D;
+    font-size: 25px;
+    margin:auto;
+}
+.close{
+	position: absolute;
+	cursor: pointer;
+	color:#0095ED;
+	font-size: 0.19rem;
+	top:-0.03rem;
+	right: 0.08rem;
+	z-index:10;
+}
+/* 统计 */
+/* 统计 */
+.tong{
+	width: 370px;
+    height: 100%;
+    overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    &::-webkit-scrollbar {
+        display: none;  
+    }
+}
+
+.sort{
+    overflow-y: auto;
+	display: flex;
+    height: 100%;
+	flex-direction: column;
+	align-items: center;
+    &::-webkit-scrollbar {
+        display: none;  
+    }
+}
+
+.sort > div{
+    margin-bottom: 15px;
+}
+
+element::-webkit-scrollbar {
+    display: none;  
+}
+/* 统计下的div */
+.tong>div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex: 1;
+    position: relative;
+    background-color: #fff;
+}
+/* canvas */
+.tong>div:nth-child(1)>div,
+.tong>div:nth-child(2)>div,
+.tong>div:nth-child(3)>div{
+	/* width: 4rem; */
+	height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* p */
+.tong>div:nth-child(1)>p,
+.tong>div:nth-child(2)>p{
+	text-align: center;
+	font-size: 14px;
+}
+/* 是否超标 */
+.tong>div:nth-child(3)>ul{
+	width: 100%;
+	padding: 0 0.2rem 20px;
+	display: flex;
+	justify-content: space-between;
+}
+/* 是否超标的img */
+.tong>div:nth-child(3)>ul>li>img{
+	display: inline-block;
+	vertical-align: middle;
+	width: 0.2rem;
+	height: 0.2rem;
+	margin-right: 0.05rem;
+}
+/* 是否超标的span */
+.tong>div:nth-child(3)>ul>li>span{
+	font-size: 0.16rem;
+}
+.showcolorp{
+    color:#0095ED;
+}
+.showcolort{
+    color:#0095ED;
+}
+
+/* radio变对号 */
+.allScra >>> .el-radio__input.is-checked .el-radio__inner::after {
+    content: '';
+    width: 7px;
+    height: 3px;
+    border: 1px solid white;
+    border-top: transparent;
+    border-right: transparent;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    vertical-align: middle;
+    transform: rotate(-45deg);
+        border-radius: 0px;
+    background: none;
+   
+}
+
+.allScra >>> .el-radio__inner{
+    border-radius: 2px;
+}
+
+.allScra >>> .el-radio__input.is-checked+.el-radio__label{
+    color: #fff;
+}
+
+.allScra >>> .el-radio__label{
+    font-size: 12px;
+    padding-left: 6px;
+}
+
+.allScra >>> .el-radio:last-of-type{
+    margin-bottom: 0;
+}
+
+.allScra >>> .el-radio{
+    margin-bottom: 3px;
+}
+
+.selectWapper >>> .el-select{
+    width: 1.7rem;
+}
+
+.selectWapper >>> .el-input__inner{
+    background-color: transparent;
+    border: none;
+}

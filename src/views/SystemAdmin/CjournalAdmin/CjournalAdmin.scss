@@ -1,0 +1,9 @@
+.CjournalAdmin{
+    .inputWidth{
+        width: 150px!important;
+    }
+
+    ::v-deep .el-select{
+        width: 100%;
+      }
+}

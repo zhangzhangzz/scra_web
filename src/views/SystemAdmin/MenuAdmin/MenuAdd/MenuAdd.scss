@@ -1,0 +1,117 @@
+// input的长度
+.InputWidth{
+  width: 65%;
+  line-height: 36px;
+}
+.Bul{
+  position: relative;
+  .Bul_1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    // 单选按钮的右边距
+    .el-radio{
+      margin-right: 15px;
+    }
+
+    .BulSpan{
+      display: inline-block;
+      font-size: 14px;
+      margin-right: 20px;
+      width: 140px;
+      text-align: right;
+    }
+  }
+}
+
+.CM{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(0,0,0,0.5);
+  .CMenu{
+    margin:0 auto;
+    margin-top:45px;
+    width: 400px;
+    border-radius: 4px;
+    background-color: #fff;
+    .CMenu_1{
+      background-color: #F8F8F8;
+      line-height: 40px;
+      padding:0 20px;
+      display: flex;
+      justify-content: space-between;
+      .close{
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+    .CMenu_2{
+      display: inline-block;
+      padding:5px 15px;
+      background-color: #67c23a;
+      color:#fff;
+      margin:20px 0 20px 20px;
+      &:hover{
+        cursor: pointer;
+        background-color: #85ce61;
+      }
+    }
+    .CMenu_3{
+      padding:0 20px;
+      height: 300px;
+      overflow: auto;
+    }
+    .CMenu_4{
+      line-height: 50px;
+      background-color: #e8e8e8;
+      text-align: right;
+      .OK,.NOOK{
+        border-radius: 4px;
+        padding:5px 15px;
+        background-color: #409eff;
+        border: 1px solid #c0c4cd;
+        color:#fff;
+        &:hover{
+          cursor: pointer;
+          background-color: #66b1ff;
+        }
+      }
+      .NOOK{
+        background-color: #fff;
+        color:#333;
+        margin:0 10px;
+        &:hover{
+          background-color: #f5f3f3;
+        }
+      }
+    }
+  }
+
+  
+}
+
+.hide1{
+  ::v-deep .el-upload--picture-card{
+      display: none!important;
+  }
+}
+.add-dialog ::v-deep .el-dialog{
+  height: 70vh;
+  overflow-y: hidden;
+}
+
+.add-dialog ::v-deep .el-dialog__body{
+  height: calc(100% - 111px);
+  overflow-y: auto;
+}
+
+
+.add-dialog ::v-deep .el-dialog__footer{
+  background-color: #f5f6f7;
+  padding-top: 15px;
+}

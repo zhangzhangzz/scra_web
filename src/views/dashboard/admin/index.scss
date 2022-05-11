@@ -1,0 +1,116 @@
+.popper__arrow{
+  display: none!important;
+}
+.popper__arrow::after{
+  display: none!important;
+}
+.dashboard-editor-container {
+  padding: 0;
+  position: relative;
+
+  .title{
+    position: absolute;
+  }
+  
+  .topSelect{
+    margin: 2px 0;
+    justify-content: center;
+    .el-input__inner{
+      border: none;
+      text-align: center;
+      // background-color: #f6f7f8;
+    }
+    .el-select__caret{
+      display: none;
+    }
+    
+  }
+
+  .github-corner {
+    position: absolute;
+    top: 0px;
+    border: 0;
+    right: 0;
+  }
+
+  .linewapper{
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    .selectWapper{
+      position: absolute;
+      right: 30px;
+      top: 20px;
+    }
+
+    .lineLeftWapper{
+      position: absolute;
+      top: 60px;
+      left: 15px;
+      
+      .line{
+        width: 3px;
+        height: 38px;
+        margin-right: 10px;
+      }
+
+      .line1{
+        background-color: #0f8bff;
+      }
+
+      .line2{
+        background-color: #2ebd0d;
+      }
+
+      .textWapper{
+        align-items: flex-start;
+        .fir{
+          font-weight: 500;
+          font-size: 18px;
+          margin: auto 0;
+        }
+
+        .sec{
+          color: #555;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .b-e{
+    background:#fff;
+    margin-left:15px;
+    overflow:hidden;
+    border-radius:5px;
+    width:calc(50% - 15px)
+  }
+
+  .thirdWapper{
+    margin-bottom: 15px;
+    .chart-wrapper{
+      flex: 1;
+      border-radius: 5px;
+      
+      overflow: hidden;
+      .third-centet-selected{
+        width: 100px;
+        right: 20px;
+        top: 20px;
+        position: absolute;
+      }
+    }
+  }
+
+  .chart-wrapper {
+    background: #fff;
+    padding: 0 15px;
+  }
+
+  
+}
+
+@media (max-width:1024px) {
+  .chart-wrapper {
+    padding: 8px;
+  }
+}

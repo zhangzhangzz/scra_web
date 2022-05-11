@@ -1,0 +1,118 @@
+.perAge{
+  ::v-deep .el-select{
+    width: 100%;
+  }
+  
+  .btnWapper{
+    height: 46px;
+    div{
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  }
+  
+  .groupList{
+    padding:0 10px;
+    margin-bottom: 5px;
+    position: relative;
+    cursor: pointer;
+    .editDialog{
+        position: absolute;
+        right: 0;
+        top:25px;
+        width: 70px;
+        z-index: 100;
+        background-color: #fff;
+        color: #555;
+        box-shadow: 1px 1px 5px 0 #eee;
+        span{
+            height: 30px;
+            padding: 0 5px;
+            line-height: 30px;
+            font-size: 13px;
+        }
+        span:hover{
+            background-color: #eee;
+            color: #008b7c;
+        }
+        .e_active{
+            background-color: #eee;
+            color: #008b7c;
+        }
+    }
+  }
+  .xq{
+     padding:0 15px 100px 0;
+     margin:0 auto;
+     .xq_1{
+       display: flex;
+       .xq_1_1{
+         width: 180px;
+         img{
+           width: 180px;
+           height: 222px;
+         }
+         div{
+           img{
+             width: 33.33%;
+             height: 40px;
+           }
+         }
+       }
+       .xq_1_2{
+         font-size: 12px;
+         padding: 0 0 0 35px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         li{
+           margin-right: 30px;
+           display: flex;
+           .type1{
+             display: inline-block;
+             width: 70px;
+             text-align: left;
+             color:#000;
+           }
+           .type2{
+             display: inline-block;
+             text-align: left;
+             width: 200px;
+             color:#999999;
+           }
+         }
+       }
+     }
+  
+  }
+  
+  .type{
+    display: inline-block;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 12px;
+    .type_1{
+      line-height: 20px;
+      img{
+        vertical-align: middle;
+        width: 18px;
+        height: 18px;
+      }
+      .type_font1{
+        display: inline-block;
+        font-size: 12px;
+        color:#00e7ff;
+      }
+      .type_font2{
+        font-size: 12px;
+      }
+    }
+  }
+  .active{
+    background-color:rgba(0,150,136,0.6);
+    color: #fff;
+  }
+  
+  
+  
+}

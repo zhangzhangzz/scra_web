@@ -1,0 +1,31 @@
+.monthly{
+    padding: 15px;
+    background-color: #f5f6f7;
+
+    .formWapper{
+        padding: 15px 15px 0;
+        background-color: #fff;
+        margin-bottom: 15px;
+    }
+
+    .btnWapper{
+        margin: 0 0 22px;
+        text-align: right;
+        width: 300px;
+    }
+
+    .sureBtn{
+        background-color:#009688;
+        border: 1px solid transparent;
+        color: #fff;
+    }
+
+    .pageWapper{
+        text-align: right;
+        margin: 20px 0;
+    }
+
+    ::v-deep .el-select{
+        width: 100%;
+      }
+}

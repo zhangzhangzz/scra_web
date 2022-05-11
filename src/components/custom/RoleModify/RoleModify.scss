@@ -1,0 +1,69 @@
+// input的长度
+.input-with-select{
+  width: 400px;
+  height: 30px;
+}
+.update{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 20;
+}
+.update_1{
+  margin: 150px auto;
+  width: 800px;
+  height:550px;
+  background-color: #fff;
+}
+.update_1_1{
+  height: 42px;
+  background-color: #ccc;
+  line-height: 42px;
+  padding:0 20px;
+  font-size: 14px;
+  display: flex;
+  margin-bottom: 80px;
+  justify-content: space-between;
+  .close{
+    cursor: pointer;
+  }
+}
+.update_1_2{
+  display: flex;
+  align-items: center;
+  padding-left:170px;
+  margin-bottom: 20px;
+  .bgName{
+    display: inline-block;
+    width: 90px;
+    font-size:17px;
+    margin-right: 15px;
+  }
+}
+.bg_4{
+  margin-top: 40px;
+  text-align: center;
+  .bg_4_1,.bg_4_2{
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .bg_4_1{
+    background-color: #1ab394;
+    margin-right: 10px;
+    &:hover{
+      background-color: #19a78a;
+    }
+  }
+  .bg_4_2{
+    background-color: #ed5565;
+    &:hover{
+      background-color: #e25160;
+    }
+  }
+}

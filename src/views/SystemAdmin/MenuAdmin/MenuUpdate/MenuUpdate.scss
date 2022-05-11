@@ -1,0 +1,46 @@
+// input的长度
+.InputWidth{
+  width: 65%;
+  line-height: 36px;
+}
+.Bul{
+  position: relative;
+  .Bul_1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    // 单选按钮的右边距
+    .el-radio{
+      margin-right: 15px;
+    }
+
+    .BulSpan{
+      display: inline-block;
+      font-size: 14px;
+      margin-right: 20px;
+      width: 140px;
+      text-align: right;
+    }
+  }
+}
+.hide1{
+  ::v-deep .el-upload--picture-card{
+      display: none!important;
+  }
+}
+
+.up-dialog ::v-deep .el-dialog{
+  height: 70vh;
+  overflow-y: hidden;
+}
+
+
+.up-dialog ::v-deep .el-dialog__body{
+  height: calc(100% - 111px);
+  overflow-y: auto;
+}
+
+.up-dialog ::v-deep .el-dialog__footer{
+  background-color: #f5f6f7;
+  padding-top: 15px;
+}

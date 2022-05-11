@@ -1,0 +1,27 @@
+1.关闭eslint校验
+vue.config.js中
+module.exports = {
+  lintOnSave: false,
+}
+
+2.设置前后端分离
+.env.development和.env.production文件夹的VUE_APP_BASE_API="公司域名"
+
+3.vuecli4.0报错
+注释掉    node_modules/sockjs-client/dist/sockjs.js下1604行
+//sele.xhr.send(payload)
+
+4.显示左上角的logo
+设置src/setting.js中sidebarLogo:true
+修改 src/layout/components/Sidebar/Login.vue中的title和logo属性
+data(){
+  return{
+    title:"蜀工云",
+    logo:"favicon.ico"   //（默认是public下的pic）
+  }
+}
+
+5.配置全局的scss   在assets/scss (自定义)
+6.配置全局的js       在assets/js(自定义)
+7.配置全局的scss变量  在style/Gvar(自定义)
+8.删除框架冗余的代码

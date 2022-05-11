@@ -1,0 +1,202 @@
+.partment{
+    padding: 20px 10px;
+
+    .table{
+        margin-top: 20px;
+
+        .thead{
+            background-color: #eff3f8;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid #ccc;
+            div{
+                flex: 1;
+            }
+
+            .first{
+                padding-left: 80px;
+            }
+        }
+        .tbody{
+            width: 100%;
+            overflow: hidden;
+            div{
+                width: 100%;
+            }
+
+            .actived{
+                background: #f1f1f1;
+            }
+        }
+
+      
+
+        .t-line{
+            width: 100%;
+            position: relative;
+            border-bottom: 1px solid #eee;
+            
+            .radioWapper{
+                position: absolute;
+                left: 30px;
+            }
+
+            
+
+            div{
+                flex: 1;
+                height: 40px;
+                line-height: 40px;
+                button{
+                    height: 30px;
+                    margin: auto auto auto 0;
+                }
+            }
+
+            .first{
+                padding-left: 80px;
+                i{
+                    margin: auto 3px auto 0;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                .second{
+                    width: 30px;
+                }
+
+                .third{
+                    width: 55px;
+                }
+            }
+        }
+        
+    }
+    .el-input.is-disabled .el-input__inner{
+        cursor: pointer!important;
+        color: #666;
+    }
+
+    .tree{
+        overflow: hidden;
+
+        .hicked{
+            background-color: #ccc;
+        }
+
+        .minus{
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+    
+        .imgWapper{
+            background-color: #fff;
+            margin-right: 5px;
+            z-index: 9;
+            width: 15px;
+            // height: 15px;
+        }
+        
+        .row{
+            margin:0 auto 0 0;
+            height: 24px;
+            font-size: 10px;
+            position: relative;
+        }
+    
+        .columns{
+            margin:0 auto 0 0;
+            overflow: hidden;
+        }
+    
+        .second{
+            margin-left: 15px;
+        }
+    
+        .file_icon{
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+    
+        .file1_icon{
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+        }
+    
+        .first{
+            span{
+                line-height: 24px;
+                cursor: pointer;
+            }
+        }
+    
+        .second{
+            margin-bottom: 0;
+            span{
+                line-height: 20px;
+                cursor: pointer;
+            }
+            .xx{
+                position: absolute;
+                height: 15px;
+                width: 12px;
+                border-left: 1px dotted #000;
+                border-bottom: 1px dotted #000;
+                left: 7px;
+                top: -3px;
+            }
+        }
+    
+        .secondWapper{
+            border-left: 1px dotted #000;
+            margin-left: 22px;
+            overflow: hidden;
+            .second_child{
+                cursor: pointer;
+                position: relative;
+                margin-left: 20px;
+                margin-bottom: 1px;
+                border-left: 1px dotted #000;
+                .xx{
+                    position: absolute;
+                    height: 1px;
+                    width: 10px;
+                    border-bottom: 1px dotted #000;
+                    left: 1px;
+                    top: 11px;
+                }
+                .white_xx{
+                    position: absolute;
+                    height: 12px;
+                    width: 10px;
+                    background-color: #fff;
+                    left: -1px;
+                    top: 12px;
+                    z-index: 99;
+                }
+                .file1_icon{
+                    padding-left: 8px;
+                    margin-left: 5px;
+                }
+                span{
+                    line-height: 20px;
+                }
+            }
+        } 
+    }
+}
+
+.treeOpen{
+    overflow: hidden;
+    transition: 0.5s all;
+    transform: translateY(0%);
+}
+
+.treeClose{
+    transition: 0.5s all;
+    transform: translateY(0%);
+}

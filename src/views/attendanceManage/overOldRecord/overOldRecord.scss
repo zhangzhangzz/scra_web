@@ -1,0 +1,191 @@
+.overOldRecord{
+    // background-color: #f5f6f7;
+    height: 100%;
+    .okColor{
+        color: rgb(128,204,93)
+    }
+
+    .failColor{
+        color: rgb(252,103,71);
+    }
+    .el-container{
+        height: 100%!important;
+    }
+    .el-tabs__nav{
+        display: flex;
+        .el-tabs__nav{
+            margin: auto;
+        }
+    }
+    .editDialog{
+        position: absolute;
+        right: 0;
+        top:25px;
+        width: 100px;
+        z-index: 100;
+        background-color: #fff;
+        color: #555;
+        box-shadow: 1px 1px 5px 0 #ccc;
+        span{
+            height: 30px;
+            width: 100%;
+            text-align: center;
+            line-height: 30px;
+            font-size: 13px;
+        }
+        span:hover{
+            background-color: #eee;
+            color: #1D73B1;
+        }
+        .e_active{
+            background-color: #eee;
+            color: #1D73B1;
+        }
+    }
+
+    .el-header{
+        height: auto!important;
+    }
+
+    .el-main{
+        padding-top: 0;
+        border-top: 1px solid #f5f6f7;
+    }
+
+    .el-aside{
+        padding: 20px;
+    }
+
+
+    .addGroup{
+        border-bottom: 1px solid #DCDFE6;
+        margin-bottom: 5px;
+    }
+
+    .groupList{
+        padding:0 10px;
+        margin-bottom: 5px;
+        position: relative;
+        cursor: pointer;
+    }
+
+
+
+    .formWapper1{
+        .el-form-item{
+            margin-bottom: 15px;
+        }
+    }
+
+    .formWapper2{
+        .el-form-item{
+            margin: 15px 0;
+        }
+    }
+
+    .mainWapper{
+        .el-header{
+            background-color: #fff;
+        }
+        .title{
+            text-align: left;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .headUrl{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .btn1{
+            color:#108cff;
+            cursor: pointer;
+        }
+
+        .btn2{
+            color: #ff5722;
+            cursor: pointer;
+        }
+
+        .czBtn{
+            padding: 0 5px;
+            margin:auto 5px;
+            border-right:1px solid #ccc;
+            border-left:1px solid #ccc;
+        }
+
+
+    }
+
+    .formWapper{
+        padding: 15px 15px 0;
+        background-color: #fff;
+        margin-bottom: 15px;
+    }
+
+    .btnWapper{
+        margin: 0 0 22px;
+        text-align: right;
+    }
+
+
+    .pageWapper{
+        text-align: right;
+        margin: 20px 0;
+    }
+
+    .btn1{
+        cursor: pointer;
+        color:#108cff;
+    }
+}
+
+.overOldRecord{
+    .el-dialog__footer {
+        text-align: center;
+    }
+
+    .personWapper{
+        width: 100%;
+        height: 360px;
+        overflow-y: auto;
+        border: 1px solid #eee;
+        border-top: none;
+        div{
+            width: 100%;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        div:hover{
+            background-color: #f1f5f8;
+        }
+
+        .active{
+            background-color: #f1f5f8;
+        }
+    }
+
+    .asideWapper{
+        
+        .active{
+            background-color:rgba(29,115,177);
+            color: #fff;
+        }
+
+        .el-pagination__jump{
+            display: block;
+            margin-left: 0;
+        }
+
+        .pageLine{
+            margin-bottom: 0;
+        }
+    }
+
+    ::v-deep .el-select{
+        width: 100%;
+      }
+}

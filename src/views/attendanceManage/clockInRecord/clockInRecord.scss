@@ -1,0 +1,19 @@
+.date >>> .el-range__close-icon{
+	display: none;
+}
+
+.date >>> .el-date-editor .el-range-input{
+	width: 42%;
+}
+
+::v-deep .el-select{
+    width: 100%;
+  }
+
+.okColor{
+    color: rgb(128,204,93)
+}
+
+.failColor{
+    color: rgb(252,103,71);
+}

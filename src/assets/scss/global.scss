@@ -1,0 +1,342 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+ul,li{
+  list-style: none;
+}
+
+.page-title{
+  padding: 20px;
+  background-color: #f6f7f8;
+  font-size: 15px;
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.rows{
+  display: flex;
+  align-items: center;
+}
+
+.columns{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// 表单验证的行高
+.el-form-item{
+  margin-bottom:7px ;
+}
+
+
+// 定义el-input的宽度
+.inputWidth1{
+  // width: 350px;
+  height: 36px;
+}
+.inputWidth2{
+  width: 200px;
+  height: 36px;
+}
+
+.el-tree-node__content{
+  height: 32px;
+  border-bottom: 1px solid #e7eaec;
+}
+
+.customer-no-border-table thead tr th.is-leaf{
+  border: none;
+}
+
+.sys_top{    //系统管理top设置
+  padding:10px 20px;
+  background-color: #fff;
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 0;
+  .sys_top_1,.sys_top_2{
+    margin: 5px 20px 5px 0;
+    .spanM{
+      display: inline-block;
+      margin-right:8px;
+    }
+  }
+  .sys_top_2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .el-input__inner{
+      height: 30px;
+      line-height: 30px;
+    }
+    .inputWidth{
+      width: 200px;
+    }
+  }
+}
+.button_search,.button_reset,.button_map,.button_pro{    //系统管理头部按钮  搜索按钮
+  height: 30px;
+  line-height: 28px;
+  background-color: $colorSearch;
+  color:#fff;
+  padding:0 12px;
+  border-radius:20px;
+  cursor: pointer;
+  margin-right: 10px;
+  &:hover{
+    background-color:$colorSearchH;
+  }
+  img{
+    width: 15px;
+    height: 15px;
+    // margin-right: 2px;
+    vertical-align: middle;
+  }
+  span{
+    font-size: 12px;
+  }
+}
+.button_reset{    //系统管理头部按钮  重设按钮
+  background-color: $colorReset;
+  &:hover{
+    background-color:$colorResetH;
+  }
+}
+.button_map{    //项目地图
+  background-color: $colorMap;
+  &:hover{
+    background-color:$colorMapH;
+  }
+}
+.button_pro{    //创建项目
+  background-color: $colorPro;
+  &:hover{
+    background-color:$colorProH;
+  }
+}
+
+
+
+.sys_bottom{   //页面底部 div
+  background-color: #ffffff;
+  padding:0 20px 20px;
+  overflow: auto;
+}
+.sys_bottom_1{  //页面底部 top ul
+   display: flex;
+   padding-bottom:20px;
+   flex-wrap: wrap;
+}
+.sys_bottom_2{  //页面底部的top标签
+   display: flex;
+   height: 30px;
+   align-items: center;
+}
+.sys_bottom_1_add,.sys_bottom_1_modify,.sys_bottom_1_del,.sys_bottom_1_export,.sys_bottom_1_dela{   ///页面底部 top按钮  添加按钮
+  display: flex;
+  align-items: center;
+  padding:0 10px;
+  margin-right: 10px;
+  border-radius: 6px;
+  height: 28px;
+  line-height: 28px;
+  background-color: $colorAdd;
+  cursor: pointer;
+  &:hover{
+    background-color: $colorAddH;
+  }
+  img{
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+    margin-right:1px;
+  }
+  span{
+    font-size: 12px;
+    color:#ffffff;
+    margin-left: 1px;
+  }
+}
+
+.sys_bottom_1_modify{    //页面底部 top按钮 修改按钮
+  background-color: $colorModify;
+  &:hover{
+    background-color: $colorModifyH;
+  }
+}
+
+.sys_bottom_1_del{     //页面底部 top按钮 删除按钮
+  background-color:$colorDel;
+  &:hover{
+    background-color:$colorDelH;
+  }
+}
+
+.sys_bottom_1_export{   //页面底部 top按钮 导出按钮
+  background-color:$colorExport;
+  &:hover{
+    background-color:$colorExportH;
+  }
+}
+.sys_bottom_1_dela{  //页面底部 top按钮 清空按钮
+  background-color:$colorDlea;
+  &:hover{
+    background-color:$colorDleaH;
+  }
+}
+
+
+// table下的按钮
+.table_button{   //table下  自定义按钮(带img)
+  display: flex;
+  justify-content: space-evenly;
+}
+.table_button_modify,.table_button_del,.table_button_more{   //table下  自定义按钮(带img)  编辑按钮
+  display: flex;
+  align-items: center;
+  padding:0 10px;
+  border-radius: 4px;
+  height: 24px;
+  line-height: 24px;
+  background-color: $colorTAdd;
+  cursor: pointer;
+  &:hover{
+    background-color: $colorTAddH;
+  }
+  img{
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    margin-right:2px;
+  }
+  span{
+    font-size: 12px;
+    color:#ffffff;
+    margin-left: 2px;
+  }
+}
+.table_button_del{  //table下  自定义按钮(带img)  删除按钮
+  background-color:$colorTDel;
+  &:hover{
+    background-color:$colorTDelH;
+  }
+}
+.table_button_more{  //table下  自定义按钮(带img)  更多按钮
+  background-color:$colorTMore;
+  &:hover{
+    background-color:$colorTMoreH;
+  }
+}
+
+
+// 类型
+.Type,.ShowW,.suss{
+ padding: 3px 8px;
+ background-color: #1c84c6;
+ color: #fff;
+ font-size: 10px;
+}
+// 是否可见   成功
+.ShowW,.suss{
+  border-radius: 6px;
+  background-color: #1ab394;
+}
+
+
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+//当前页 页面蒙层
+.Sbg{
+  position: absolute;
+  margin:0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100000;
+  background-color: #fff;
+  // padding:10px 10px;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar{
+  width: 7px;
+  height: 7px;
+  background-color: #F5F5F5;
+}
+  
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+  
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+  background-color: #c8c8c8;
+}
+
+.warn{
+  color: red;
+  line-height: 20px;
+}
+
+.firBtn{
+  cursor: pointer;
+  min-width:82px;
+  height:32px;
+  background:#59CAA0;
+  color:#fff;
+  line-height:32px;
+  text-align:center;
+  border-radius:3px;
+  margin:0 10px 0 auto
+}
+
+.secBtn{
+  cursor: pointer;
+  min-width:82px;
+  height:32px;
+  background:#F96040;
+  color:#fff;
+  line-height:32px;
+  text-align:center;
+  border-radius:3px;
+}
+
+.thirdBtn{
+  cursor: pointer;
+  min-width:82px;
+  height:34px;
+  background:#fff;
+  line-height:32px;
+  text-align:center;
+  border-radius:3px;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+}
+
+::v-deep .okColor{
+  color: rgb(128,204,93);
+}
+
+::v-deep .failColor{
+  color: rgb(252,103,71);
+}

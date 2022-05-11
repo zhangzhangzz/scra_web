@@ -1,0 +1,177 @@
+
+.all >>> .top_input{
+	width: 12%;
+}
+
+.all >>> .el-select,.all >>> .top_input{
+	width: 1rem;
+}
+
+.all >>> .el-button--warning{
+	background-color: #fea000;
+	border-color:#fea000;
+}
+.all >>> .el-pagination{
+	position: relative;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.all >>> .el-pagination .btn-prev{
+	margin-left: 10px;
+}
+
+
+.top_wapper{
+	padding: 0 20px 20px 0;
+}
+
+.middle{
+	min-height: calc(100% - 106px); 
+	 overflow-y: auto;
+}
+
+.dialogTable{
+	height: 350px;
+	overflow-y: auto;
+}
+
+
+
+.dw >>> .el-date-editor .el-range-separator{
+	width: 6%;
+}
+
+.dw >>> .el-date-editor--daterange{
+	margin-right: 20px;
+}
+
+
+
+.foots{
+	text-align: center;
+	margin-top:0.2rem;
+}
+/* 脚码前往多少页 */
+>>> .foots .el-input__inner{
+	min-width: 0.4rem;
+	width: 0.4rem;
+}
+>>> .foots .el-select>.el-input{
+	display: none;
+}
+
+
+/* 页数字体大小 */
+>>> .foots .el-pager li{
+	font-size: 0.15rem;
+	height: 0.3rem;
+}
+
+.foot1{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color:#fff;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	text-align: center;
+}
+.foot1>span{
+	font-size: 0.16rem;
+	color:#000;
+}
+>>> .el-loading-mask{
+	background-color: rgba(255,255,255,1);
+}
+
+.Null{
+	padding:0.3rem;
+	color: #0095ED;
+	font-size: 0.2rem;
+	text-align: center;
+}
+
+.btnBox{
+	border-radius: 10px;
+	overflow: hidden;
+	display: inline-block;
+	border: 1px solid #ccc;
+	font-size: 16px;
+}
+
+.btnWapper{
+	background-color: #fff;
+	border-left: 1px solid #ccc;
+	border-right: 0;
+	color: #333;
+	height: 34px;
+	line-height: 34px;
+	cursor: pointer;
+	padding: 0 0.05rem;
+	float: left;
+	font-size: 0.8em;
+}
+
+.btnWapper:first-of-type{
+	border:none;
+}
+
+
+.active{
+	background-color: #1D73B1;
+	color: #fff;
+}
+
+.searchWapperScra{
+	width: 3rem;
+    display: inline-block;
+}
+
+.inline-input{
+    width: 2rem;
+}
+
+.el-select{
+    width: 70px;
+}
+
+.selectWapper >>> .el-input__inner{
+    border-right: none;
+    border-radius:4px 0 0 4px;
+    height: 36px;
+    padding-right: 15px;
+}
+
+.selectWapper >>> .el-input__icon{
+    width: 15px;
+    line-height: 36px;
+    color: #555;
+}
+
+.inline-input >>> .el-input__inner{
+    border-radius:0 4px 4px 0;
+    height: 36px;
+}
+
+.inline-input >>> .el-input__suffix{
+    border-left: 1px solid #DCDFE6;
+}
+
+.inline-input >>> .el-input__icon{
+    line-height: 36px;
+    color: #555;
+}
+
+.date >>> .el-range__close-icon{
+	display: none;
+}
+
+.date >>> .el-range-editor--medium .el-range-input{
+	/* font-size: 0.08rem; */
+}
+
+.date >>> .el-date-editor .el-range-input{
+	width: 42%;
+}
